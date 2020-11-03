@@ -1,0 +1,23 @@
+<div class="container">
+    <h1>Random Beer</h1>
+        <div class="random-row">
+            <div class="random-left">
+                <img class="card-img-top" src={{image_url}}  />
+            </div>
+            <div class="random-right">
+                <h5 class="card-title">{{name}}</h5>
+                <hr>
+                <h6>{{tagline}}</h6>
+                <hr>
+                <h6>Our Tips:</h6>
+                <p>{{brewers_tips}}</p>
+                <p class="card-text">{{description}}</p>
+                <ul>
+                    <h6>Food Pairing:</h6>
+                    {{#each food_pairing}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+</div>
